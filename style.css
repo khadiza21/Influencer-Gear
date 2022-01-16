@@ -1,0 +1,264 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    
+    margin: 0%;
+    padding: 0%;
+}
+.header-container{
+    margin:3% 8% 3% 8%;
+    
+}
+.head-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.tag{
+    font-size: 18px;
+}
+.nav-option ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.head-navbar a ,li{
+    text-decoration: none;
+    color: black; 
+    list-style: none;
+   
+}
+.head-navbar li{
+    margin-left: 2em;
+    font-size: 18px;
+}
+.banner{
+    display: flex;
+   
+    /* padding: 2%; */
+    
+   
+}
+.banner-text{
+  
+    
+    width: 100%;
+    padding: 6% 0%;
+    
+    /* padding-right: 5%;
+    margin-right: 5%; */
+    /* height: 500px; */
+    
+}
+.banner-text h1{
+    font-size: 42px;
+}
+.banner-text a{
+    background-color: #E02C6D;;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+   
+}
+.banner-img{
+
+    width: 100%;
+    height: 500px;    
+    padding: 5% 0%;
+}
+.banner-img img{
+    width: 90%;
+    max-width:600px ;
+}
+.collection{
+    width: 80%;
+    margin: 30px 5% 50px 5%;
+}
+.collection-title{
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    width: 100%;
+    margin-left: 6%;
+   
+    
+
+    
+}
+.product{
+   margin-right: 20px;
+    
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    
+}
+.product img{
+    width: 90%;
+    margin:15px 5% 0px 5%;
+}
+.product-details{
+    margin: 0 5%;
+    
+}
+.product-details h2{
+ font-size: 2em;
+}
+.product-details h3{
+ font-size: 23px;
+}
+.product-details p{
+ color: gray;
+}
+.fa-star ,.fa-star-half-alt{
+    font-size: 12px;
+     color: #FFC014;
+}
+
+.see-btn{
+    text-align: end;
+    margin: 30px 0px;
+    
+   
+}
+.see-btn a{
+     text-decoration: none;
+     color: E02C6D;
+     /* color: rgb(236, 60, 90); */
+     color: #E02C6D;
+}
+
+.newsletters{
+    display: flex;
+    background-color: rgba(163, 170, 163, 0.192);
+    width: 90%;
+    margin: 10px 3%;
+    padding:   20px 2%;
+    border-radius: 5px;
+}
+.newsletter{
+    width: 90%;
+    padding: 10px 6%;
+    
+}
+.newsletter h1{
+    font-size: 3em;
+    
+}
+.newsletter h2{
+    font-size: 2em;
+    
+}
+.email-input{
+ border: 1px solid gray;
+
+}
+.email-input input,button{
+    border: 0px ;
+    background-color: white;
+    height: 50px;
+}
+
+
+.new-banner-img{
+    width: 90%;
+    
+    
+}
+.new-banner-img img{
+    width: 100%;
+}
+
+footer{
+     text-align: center;
+     background-color: rgb(5, 2, 29);
+     color: white;
+     padding: 25px 0px;
+}
+
+.social-icon a{
+    font-size: 25px;
+    text-decoration: none;
+     color: white;
+     margin: 0px 5px;
+}
+
+
+/* Media Queries  */
+@media only screen and (max-width:700px) {
+    .container{
+        width: 90%;
+
+    }
+  
+    .head-navbar {
+      justify-content: center;
+    }
+    .nav-option{
+        display: none;
+    } 
+    
+    .banner{
+        flex-direction: column;
+    }
+
+
+    .products{
+        grid-template-columns: repeat(1,9fr);
+    }
+    .newsletters{
+        display: grid;
+
+    }
+    .new-banner-img img{
+        width: 450px;
+        padding-top: 20px;
+    }
+   
+}
+/* tablet devices  */
+@media only screen and (min-width:700px) and (max-width:992px) {
+    .container{
+        width: 90%;
+
+    }
+  
+    .head-navbar {
+      justify-content: center;
+    }
+    .nav-option{
+        display: none;
+    } 
+    .newsletters{
+        display: grid;
+
+    }
+  
+   
+
+    .products{
+        grid-template-columns: repeat(2,6fr);
+        
+    }
+    .newsletters{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    
+    .banner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
