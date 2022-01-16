@@ -156,50 +156,48 @@ li {
   color: #e02c6d;
 }
 
-/* newsletter part style  */  /* justify-content: center; */
-.main{
-    display: flex;
-  
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
+/* newsletter part style  */ /* justify-content: center; */
+.main {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
-.containerr{
-    background-color: #a4c5ba46;
-    width: 80%;
-    padding: 30px;
-    margin-top: 20px;
-    border-radius: 5px;
+.containerr {
+  background-color: #a4c5ba46;
+  width: 80%;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
-.blogs{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-row: 26px;
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: 26px;
 }
-.blog{
-    display: flex;
+.blog {
+  display: flex;
 }
-.blog img{
-    width:177px;
-    height: 117px;
+.blog img {
+  width: 177px;
+  height: 117px;
 }
-.blog-info{
-    margin-left: 16px;
+.blog-info {
+  margin-left: 16px;
 }
-.blog-title{
-    font-size: 20px;
+.blog-title {
+  font-size: 20px;
 }
 .blog-author {
-    color: #4d4747;
-    font-size: 16px;
+  color: #4d4747;
+  font-size: 16px;
 }
 .blog-author a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #e02c6d;
+  text-decoration: none;
+  font-size: 16px;
+  color: #e02c6d;
 }
-
-
 
 /* footer part stelys  */
 
@@ -240,17 +238,18 @@ footer {
     grid-template-columns: repeat(1, 9fr);
   }
 
-  .container{
+  .container {
     width: 90%;
-}
-.players, .blogs,.courses{
-    grid-template-columns: repeat(1,1fr);
-}
-.player,.blog{
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blog {
     flex-direction: column;
-    
-}
-
+  }
 }
 
 /* tablet devices  */
@@ -265,12 +264,10 @@ footer {
   .nav-option {
     display: none;
   }
- 
 
   .products {
     grid-template-columns: repeat(2, 6fr);
   }
- 
 
   .banner {
     display: grid;
@@ -280,10 +277,11 @@ footer {
   /* .container{
     width: 90%;
 } */
-.players, .courses{
-    grid-template-columns: repeat(2,1fr);
-}
-.blogs{
-    grid-template-columns: repeat(1,1fr);
-}
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
