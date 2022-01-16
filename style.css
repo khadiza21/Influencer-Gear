@@ -156,55 +156,50 @@ li {
   color: #e02c6d;
 }
 
-/* newsletter part style  */
-.newsletters {
-  display: flex;
-  background-color: rgba(163, 170, 163, 0.192);
-  width: 90%;
-  margin: 10px 3%;
-  padding: 20px 2%;
-  border-radius: 5px;
-  margin-bottom: 60px;
+/* newsletter part style  */  /* justify-content: center; */
+.main{
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
 }
-.newsletter {
-  width: 90%;
-  padding: 10px 6%;
+.containerr{
+    background-color: #a4c5ba46;
+    width: 80%;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
-.newsletter h1 {
-  font-size: 3em;
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row: 26px;
 }
-.newsletter h2 {
-  font-size: 2em;
+.blog{
+    display: flex;
 }
-.email-input {
-  width: 100%;
+.blog img{
+    width:177px;
+    height: 117px;
 }
-.email-input input,
-button {
-  border: 1px solid darkgrey;
-  border-radius: 10px;
-  height: 40px;
-  font-size: 20px;
-  font-weight: bold;
-  padding-left: 10px;
+.blog-info{
+    margin-left: 16px;
 }
-.email-input button {
-  border: 1px solid #e02c6d;
-  padding: 0 20px;
-  margin-left: 10px;
-  color: #e02c6d;
+.blog-title{
+    font-size: 20px;
 }
-.email-input button:hover {
-  background-color: #e02c6d;
-  color: white;
+.blog-author {
+    color: #4d4747;
+    font-size: 16px;
+}
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #e02c6d;
 }
 
-.new-banner-img {
-  width: 90%;
-}
-.new-banner-img img {
-  width: 100%;
-}
+
 
 /* footer part stelys  */
 
@@ -244,24 +239,25 @@ footer {
   .products {
     grid-template-columns: repeat(1, 9fr);
   }
-  .newsletters {
-    display: grid;
-  }
-  .new-banner-img img {
-    width: 450px;
-    padding-top: 20px;
-  }
 
-  .email-input input {
-    width: 70%;
-  }
+  .container{
+    width: 90%;
+}
+.players, .blogs,.courses{
+    grid-template-columns: repeat(1,1fr);
+}
+.player,.blog{
+    flex-direction: column;
+    
+}
+
 }
 
 /* tablet devices  */
 @media only screen and (min-width: 700px) and (max-width: 992px) {
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
 
   .head-navbar {
     justify-content: center;
@@ -269,23 +265,25 @@ footer {
   .nav-option {
     display: none;
   }
-  .newsletters {
-    display: grid;
-  }
+ 
 
   .products {
     grid-template-columns: repeat(2, 6fr);
   }
-  .newsletters {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  /* .email-input input{
-        width: 50%;
-           } */
+ 
 
   .banner {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* .container{
+    width: 90%;
+} */
+.players, .courses{
+    grid-template-columns: repeat(2,1fr);
+}
+.blogs{
+    grid-template-columns: repeat(1,1fr);
+}
 }
