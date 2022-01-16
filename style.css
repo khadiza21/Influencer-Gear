@@ -254,9 +254,9 @@ footer {
 
 /* tablet devices  */
 @media only screen and (min-width: 700px) and (max-width: 992px) {
-  /* .container {
+  .container {
     width: 90%;
-  } */
+  }
 
   .head-navbar {
     justify-content: center;
