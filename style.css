@@ -164,7 +164,7 @@ body{
     
 }
 .email-input{
- width: 80%;
+ width: 100%;
 
 }
 .email-input input,button{
@@ -242,7 +242,10 @@ footer{
         width: 450px;
         padding-top: 20px;
     }
-   
+    
+   .email-input input{
+width: 70%;
+   }
 }
 /* tablet devices  */
 @media only screen and (min-width:700px) and (max-width:992px) {
@@ -273,6 +276,9 @@ footer{
         grid-template-columns: repeat(1,1fr);
 
     }
+    /* .email-input input{
+        width: 50%;
+           } */
     
     .banner{
         display: grid;
