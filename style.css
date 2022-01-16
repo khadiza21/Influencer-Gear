@@ -57,6 +57,9 @@ body{
 .banner-text h1{
     font-size: 42px;
 }
+.banner-text p{
+    text-align: justify;
+}
 .banner-text a{
     background-color: #E02C6D;;
     color: white;
@@ -145,6 +148,7 @@ body{
     margin: 10px 3%;
     padding:   20px 2%;
     border-radius: 5px;
+    margin-bottom: 60px;
 }
 .newsletter{
     width: 90%;
@@ -160,13 +164,27 @@ body{
     
 }
 .email-input{
- border: 1px solid gray;
+ width: 80%;
 
 }
 .email-input input,button{
-    border: 0px ;
-    background-color: white;
-    height: 50px;
+    border: 1px solid darkgrey;
+   border-radius: 10px;
+   height: 40px;
+   font-size: 20px;
+   font-weight: bold;
+   padding-left: 10px;
+}
+.email-input button{
+   border: 1px solid #E02C6D; 
+   padding:0 20px;
+   margin-left: 10px;
+   color: #E02C6D;
+  
+}
+.email-input button:hover{
+     background-color:#E02C6D ;
+   color:white;
 }
 
 
